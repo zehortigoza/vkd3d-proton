@@ -1937,7 +1937,7 @@ HRESULT vkd3d_allocate_memory(struct d3d12_device *device, struct vkd3d_memory_a
     {
         vkd3d_queue_timeline_trace_register_instantaneous(&device->queue_timeline_trace,
                 VKD3D_QUEUE_TIMELINE_TRACE_STATE_TYPE_CLEAR_ALLOCATION, info->memory_requirements.size);
-        vkd3d_memory_transfer_queue_clear_allocation(&device->memory_transfers, allocation);
+        //vkd3d_memory_transfer_queue_clear_allocation(&device->memory_transfers, allocation);
     }
 
     return hr;
